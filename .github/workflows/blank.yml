@@ -1,10 +1,9 @@
-name: Reusable deploy workflow
 on:
-  workflow_call:
+  workflow_dispatch:
     inputs:
       build_id:
         required: true
-        type: number
+        type: string
       deploy_target:
         required: true
         type: string
